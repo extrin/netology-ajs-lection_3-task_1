@@ -4,7 +4,10 @@
   "description": "Code for task 1 of lesson 3 in AJS course at Netology",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "lint": "eslint .",
+    "build": "webpack --mode production",
   },
   "repository": {
     "type": "git",
