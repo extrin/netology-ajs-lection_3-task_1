@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development",
     "lint": "eslint .",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "7.1.5",
     "babel-preset-env": "^1.7.0",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",

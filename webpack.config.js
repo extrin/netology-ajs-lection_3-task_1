@@ -16,18 +16,27 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: 'dist'
-            }
+              publicPath: 'dist',
+            },
           },
-          "css-loader"
+          'css-loader',
         ],
+      },
+      {
+        test: /\.js/,
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+        ],
+        exclude: /(node_modules)/,
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
     }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
@@ -42,6 +51,6 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 9000
-  }
+    port: 9000,
+  },
 };

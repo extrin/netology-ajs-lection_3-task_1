@@ -1,1 +1,1 @@
-console.log('app worked');
+export default console.log('app worked');
